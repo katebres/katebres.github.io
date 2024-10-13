@@ -1,0 +1,385 @@
+/* General Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  color: #333;
+  background-color: #fafafa;
+}
+.logo {
+  width: 50px;
+}
+
+.top-container {
+  display: flex;
+  font-weight: bold;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 20px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  background-color: rgb(255, 255, 255);
+}
+
+.left-content-container {
+  display: flex;
+  align-items: center;
+}
+
+.top-container img{
+  margin-right: 10px;;
+}
+
+.search-bar-container {
+  width: 300px;
+  padding: 5px;
+}
+
+.search-bar {
+  float: right;
+  width: 200px;
+  padding: 5px;
+  border-radius: 20px;
+  border: 2px solid rgb(149, 39, 149);
+  font-family: Montserrat, sans-serif;
+}
+
+header {
+  background: linear-gradient(135deg, #ffcc5c, #ff6f69);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: Montserrat, sans-serif;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.discover {
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 18px;
+  color: #ff6f69;
+}
+
+p {
+  margin: 10px 0;
+}
+
+section {
+  margin: 40px auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Carousel Styles */
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  width: 80%;
+  scroll-behavior: smooth;
+}
+
+.carousel .item {
+  min-width: 250px;
+  margin: 0 15px;
+  text-align: center;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.carousel .item:hover {
+  transform: translateY(-5px);
+}
+
+.carousel img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-buy {
+  padding: 10px 40px;
+  background-color: #a15edc;
+  border: none;
+  color: white;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-buy:hover {
+  background-color: #d481d4;
+}
+
+.left-arrow,
+.right-arrow {
+  background-color: #ff6f69;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.left-arrow {
+  left: 0;
+}
+
+.right-arrow {
+  right: 0;
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
+  background-color: #ffcc5c;
+}
+
+/*Suggested items section*/
+.suggested-items-container {
+  display: flex;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.suggested-items-container .item {
+  min-width: 170px;
+  margin: 0 15px;
+  text-align: center;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.suggested-items-container .item:hover {
+  transform: translateY(-5px);
+}
+
+.suggested-items-container img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 20px;
+}
+
+/*See gallery button*/
+.see-gallery-button {
+  padding: 10px 40px;
+  font-size: 18px;
+  background-color: #a15edc;
+  border: none;
+  color: white;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 0 auto;
+  margin-top: 25px;
+  font-family: Montserrat, sans-serif;;
+}
+
+.see-gallery-button:hover {
+  background-color: #d481d4;
+}
+
+/* Benefits Section */
+.benefits {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.benefit {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.benefit:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Product Page */
+#product {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Adjustments to the product images container */
+.product-images-container {
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+  width: 700px; /* Adjust width as necessary */
+}
+
+.bag-first-image {
+  max-width: 305px; /* Width of the main image */
+  max-height: 305px; /* Height of the main image */
+  margin-right: 10px; /* Space between images */
+}
+
+.small-images {
+  display: flex;
+  flex-direction: column; /* Arrange smaller images vertically */
+}
+
+/* Smaller images styles */
+.bag-second-image,
+.bag-third-image,
+.bag-fourth-image,
+.bag-fifth-image {
+  height: 150px; /* Height for smaller images */
+  width: 170px; /* Width for smaller images */
+  object-fit: cover;; /* Maintain aspect ratio */
+}
+
+/* Product Details */
+.product-details {
+  flex: 1;
+  margin-left: 20px;  /* Space between product images and details */
+}
+
+.bag-price {
+  font-size: 25px;
+  font-family: Montserrat, sans-serif;
+}
+
+.made-in {
+  font-size: 15px;
+  font-family: Montserrat, sans-serif;
+}
+
+.material {
+  font-family: Montserrat, sans-serif;
+  font-size: 15px;
+}
+
+.product-description {
+  font-size: 15px;
+  font-family: Montserrat, sans-serif;
+}
+
+.btn-buy-bag {
+  padding: 12px 70px;
+  background-color: #a15edc;
+  border: none;
+  color: white;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: Montserrat, sans-serif;
+  font-size: 15px;
+  font-weight: medium;
+}
+
+.btn-buy-bag:hover {
+  background-color: #d481d4;
+}
+
+/* Related Items */
+
+.see-more-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.check-other-products {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.see-more-button {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  font-family: Montserrat, sans-serif;
+  font-size: 15px;
+  font-weight: medium;
+  cursor: pointer;
+}
+
+.arrow {
+  padding-top: 3px;
+  width: 15px;
+  height: 15px;
+  margin-left: 1px;
+}
+
+#related-products .related-items {
+  display: flex;
+  gap: 20px;
+}
+
+.related-items .item {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 2px;
+  font-family: Montserrat, sans-serif;
+}
